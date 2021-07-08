@@ -449,3 +449,30 @@ body {
 .user__name {
   margin-left: 18px;
 }
+
+/* line 48, ../sass/_header.sass */
+.navbar {
+  background-color: #0A223D;
+}
+/* line 50, ../sass/_header.sass */
+.navbar-menu {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+/* line 53, ../sass/_header.sass */
+.navbar-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 59, ../sass/_header.sass */
+.navbar-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
