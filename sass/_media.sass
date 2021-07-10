@@ -49,8 +49,28 @@
     width: 16px
     height: 1px
     background-color: #333333
+ 
+ .hotel
+  &-info
+   &__text
+    flex-basis: 100%
+   &__wrapper
+    justify-content: space-between
+    flex-basis: 100%
+   &__name
+    flex-basis: 100%
+   &__ratting
+    display: none
+   &__offer
+
+    order: -1
+   &__stars
+    flex-basis: auto
 
 @media(max-width: 600px)
  .container
   width: 560px
   max-width: 92%
+@media(max-width: 320px)
+ .container
+  width: 278px

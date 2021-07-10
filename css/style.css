@@ -393,25 +393,25 @@ img {
   max-width: 100%;
 }
 
-/* line 2, ../sass/_header.sass */
+/* line 2, ../sass/blocks/_header.sass */
 .header-top {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #FFFFFF;
 }
-/* line 6, ../sass/_header.sass */
+/* line 6, ../sass/blocks/_header.sass */
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 10, ../sass/_header.sass */
+/* line 10, ../sass/blocks/_header.sass */
 .logo {
   width: 177px;
 }
 
-/* line 13, ../sass/_header.sass */
+/* line 13, ../sass/blocks/_header.sass */
 .search-form {
   position: relative;
   height: 40px;
@@ -419,7 +419,7 @@ img {
   overflow: hidden;
   margin-right: 108px;
 }
-/* line 19, ../sass/_header.sass */
+/* line 19, ../sass/blocks/_header.sass */
 .search-form__input {
   width: 350px;
   height: 100%;
@@ -428,7 +428,7 @@ img {
   padding-right: 75px;
   overflow: hidden;
 }
-/* line 26, ../sass/_header.sass */
+/* line 26, ../sass/blocks/_header.sass */
 .search-form__button {
   position: absolute;
   width: 65px;
@@ -440,21 +440,21 @@ img {
   cursor: pointer;
 }
 
-/* line 36, ../sass/_header.sass */
+/* line 36, ../sass/blocks/_header.sass */
 .user {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
 }
-/* line 41, ../sass/_header.sass */
+/* line 41, ../sass/blocks/_header.sass */
 .user__image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
-/* line 46, ../sass/_header.sass */
+/* line 46, ../sass/blocks/_header.sass */
 .user__name {
   margin-left: 18px;
   font-size: 14px;
@@ -462,21 +462,21 @@ img {
   font-weight: 400;
 }
 
-/* line 52, ../sass/_header.sass */
+/* line 52, ../sass/blocks/_header.sass */
 .menu-button {
   display: none;
 }
 
-/* line 54, ../sass/_header.sass */
+/* line 54, ../sass/blocks/_header.sass */
 .navbar {
   background-color: #0A223D;
 }
-/* line 56, ../sass/_header.sass */
+/* line 56, ../sass/blocks/_header.sass */
 .navbar-menu {
   padding-top: 31px;
   padding-bottom: 31px;
 }
-/* line 59, ../sass/_header.sass */
+/* line 59, ../sass/blocks/_header.sass */
 .navbar-menu__list {
   margin: 0;
   padding: 0;
@@ -484,7 +484,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-/* line 65, ../sass/_header.sass */
+/* line 65, ../sass/blocks/_header.sass */
 .navbar-menu__link {
   text-decoration: none;
   color: #ffffff;
@@ -492,6 +492,121 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
+}
+
+/* line 1, ../sass/blocks/_breadcrumbs.sass */
+.breadcrumbs {
+  background-color: #F5FAFE;
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+/* line 5, ../sass/blocks/_breadcrumbs.sass */
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+/* line 10, ../sass/blocks/_breadcrumbs.sass */
+.breadcrumbs__item {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  margin-right: 3px;
+}
+/* line 16, ../sass/blocks/_breadcrumbs.sass */
+.breadcrumbs__item:not(:last-child)::after {
+  content: " /";
+  font-size: 14px;
+}
+/* line 19, ../sass/blocks/_breadcrumbs.sass */
+.breadcrumbs__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 1, ../sass/blocks/_hotel.sass */
+.hotel {
+  background-color: #F5FAFE;
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+/* line 5, ../sass/blocks/_hotel.sass */
+.hotel-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 9, ../sass/blocks/_hotel.sass */
+.hotel-info__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 13, ../sass/blocks/_hotel.sass */
+.hotel-info__name {
+  margin: 0;
+  margin-right: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* line 19, ../sass/blocks/_hotel.sass */
+.hotel-info__offer {
+  padding: 4px 9px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 13px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 3px;
+}
+/* line 27, ../sass/blocks/_hotel.sass */
+.hotel-info__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+/* line 32, ../sass/blocks/_hotel.sass */
+.hotel-info__ratting {
+  display: flex;
+  flex-direction: column;
+}
+/* line 35, ../sass/blocks/_hotel.sass */
+.hotel-info__stars {
+  flex-basis: 100%;
+}
+
+/* line 38, ../sass/blocks/_hotel.sass */
+.ratting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 45px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  color: #ffffff;
+}
+/* line 48, ../sass/blocks/_hotel.sass */
+.ratting__text {
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 10px;
+}
+/* line 52, ../sass/blocks/_hotel.sass */
+.ratting__counter {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/* line 57, ../sass/blocks/_hotel.sass */
+.ratting__counter_smal-text {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
 }
 
 @media(max-width: 1200px) {
@@ -577,11 +692,43 @@ img {
     height: 1px;
     background-color: #333333;
   }
+
+  /* line 55, ../sass/_media.sass */
+  .hotel-info__text {
+    flex-basis: 100%;
+  }
+  /* line 57, ../sass/_media.sass */
+  .hotel-info__wrapper {
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+  /* line 60, ../sass/_media.sass */
+  .hotel-info__name {
+    flex-basis: 100%;
+  }
+  /* line 62, ../sass/_media.sass */
+  .hotel-info__ratting {
+    display: none;
+  }
+  /* line 64, ../sass/_media.sass */
+  .hotel-info__offer {
+    order: -1;
+  }
+  /* line 67, ../sass/_media.sass */
+  .hotel-info__stars {
+    flex-basis: auto;
+  }
 }
 @media(max-width: 600px) {
-  /* line 54, ../sass/_media.sass */
+  /* line 71, ../sass/_media.sass */
   .container {
     width: 560px;
     max-width: 92%;
+  }
+}
+@media(max-width: 320px) {
+  /* line 75, ../sass/_media.sass */
+  .container {
+    width: 278px;
   }
 }
