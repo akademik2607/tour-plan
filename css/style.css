@@ -631,20 +631,20 @@ img {
   width: 100%;
   height: 100%;
 }
-/* line 76, ../sass/blocks/_hotel.sass */
-.swiper__image {
+/* line 77, ../sass/blocks/_hotel.sass */
+.swiper-slide__image {
   border-radius: 8px;
   max-width: 100%;
   height: 100%;
 }
-/* line 81, ../sass/blocks/_hotel.sass */
+/* line 82, ../sass/blocks/_hotel.sass */
 .swiper-slide {
   width: 100%;
   position: relative;
   border-radius: 8px;
   owerflow: hidden;
 }
-/* line 86, ../sass/blocks/_hotel.sass */
+/* line 87, ../sass/blocks/_hotel.sass */
 .swiper-slide:after {
   content: "";
   position: absolute;
@@ -660,7 +660,7 @@ img {
   height: 100%;
   border-radius: 8px;
 }
-/* line 100, ../sass/blocks/_hotel.sass */
+/* line 101, ../sass/blocks/_hotel.sass */
 .swiper-button {
   width: 30px;
   height: 30px;
@@ -671,14 +671,14 @@ img {
   tranxform: translateY(-50%);
   background-color: transparent;
 }
-/* line 109, ../sass/blocks/_hotel.sass */
+/* line 110, ../sass/blocks/_hotel.sass */
 .swiper-button--prev {
   background-image: url("../img/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
 }
-/* line 114, ../sass/blocks/_hotel.sass */
+/* line 115, ../sass/blocks/_hotel.sass */
 .swiper-button--next {
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
