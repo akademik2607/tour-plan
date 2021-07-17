@@ -2,6 +2,9 @@
  .container
   width: 910px
 
+ .slider
+  width: 550px
+
 @media(max-width: 992px)
  .container
   width: 700px
@@ -24,6 +27,22 @@
    &__link
     font-size: 12px
     line-height: 15px
+
+ .hotel
+  &-grid
+   flex-wrap: wrap
+ .slider
+  width: 700px
+  margin-bottom: 30px
+
+ .price
+  &-map
+   flex-direction: row
+   width: 100%
+ .booking
+  padding-right: 22px
+  padding-left: 22px
+  width: 340px
 @media(max-width: 768px)
  .container
   width: 576px
@@ -66,6 +85,21 @@
     order: -1
    &__stars
     flex-basis: auto
+   &-grid
+    width: 100%
+ .slider
+  width: 100%
+ .price
+  &-map
+   flex-direction: column
+   flex-basis: 100%
+ .booking
+  width: 100%
+  flex-basis: 100%
+  margin-bottom: 20px
+ .map
+  width: 100%
+  flex-basis: 100%
 
 @media(max-width: 600px)
  .container
