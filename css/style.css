@@ -782,7 +782,7 @@ img {
 }
 /* line 186, ../sass/blocks/_hotel.sass */
 .booking__button {
-  padding: 13px 82px;
+  padding: 13px 0;
   background-color: #EC1F46;
   color: #ffffff;
   border: none;
@@ -975,9 +975,27 @@ img {
     width: 560px;
     max-width: 92%;
   }
+
+  /* line 108, ../sass/_media.sass */
+  .slider {
+    height: 179px;
+  }
+
+  /* line 111, ../sass/_media.sass */
+  .swiper-container {
+    height: 100%;
+  }
+  /* line 113, ../sass/_media.sass */
+  .swiper-slide {
+    height: 100%;
+  }
+  /* line 115, ../sass/_media.sass */
+  .swiper-slide__image {
+    width: 100%;
+  }
 }
 @media(max-width: 320px) {
-  /* line 109, ../sass/_media.sass */
+  /* line 118, ../sass/_media.sass */
   .container {
     width: 278px;
   }
