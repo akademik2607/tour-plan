@@ -6,7 +6,7 @@
   width: 550px
 
 @media(max-width: 992px)
- .container
+ .container, .newsletter-container
   width: 700px
  .header
   &-top
@@ -100,9 +100,15 @@
  .map
   width: 100%
   flex-basis: 100%
+ .newsletter
+  &-container
+   width: 576px
+   flex-direction: column
+  &-text
+   margin-bottom: 37px
 
 @media(max-width: 600px)
- .container
+ .container, .newsletter-container
   width: 560px
   max-width: 92%
  .slider
@@ -114,6 +120,8 @@
    height: 100%
    &__image
     width: 100%
+ .email-form
+  width: 280px
 @media(max-width: 320px)
  .container
   width: 278px
