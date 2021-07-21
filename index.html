@@ -9,6 +9,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" >
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=5d618378-4689-4ca7-880b-b683b6cd61d2&lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [40.76469330, -73.98120135],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 17,
+        });
+        
+        var myPlacemark = new ymaps.Placemark([40.76469330, -73.98120135], {}, {
+    preset: 'islands#redIcon'
+});
+        // Размещение геообъекта на карте.
+    myMap.geoObjects.add(myPlacemark);
+    }
+</script>
     </head>
     <body>
         <header class="header">
@@ -96,11 +121,39 @@
                           <button class="swiper-button swiper-button--next"></button>
                         </div>     
                     </div>
+                    <div class="price-map">
+                        <div class="booking">
+                            <div class="booking__numbers">
+                                <div class="booking__price">
+                                    <span class="booking__start">price starts as</span>
+                                    <strong class="booking__pricetag">$ 8,500</strong>
+                                    <span class="booking__perroom">per room / night</span>
+                                </div>
+                                <div class="booking__zoom">
+                                    <div class="booking__item"><img class="booking__icon" src="./img/user.svg" alt="user-icon"><span>2 x Guests</span></div>
+                                    <div class="booking__item"><img class="booking__icon" src="./img/room.svg" alt="room-icon"><span>1 x Room</span></div>
+                                </div>
+                            </div>
+                            <div class="booking__phone">
+                                <span class="booking__text">Quick Booking</span>
+                                <a class="booking__num" href="tel:12100"><img class="booking__icon booking__tel" src="./img/phone.svg" alt="phone-icon">12100</a>
+                            </div>
+                            <button class="booking__button">View Other Options</button>
+                            
+                        </div>
+                        <div id="map" class="map">
+                            <!--<iframe class="map__fraim" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6065.822044356483!2d-74.34079435134277!3d40.52145772775334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c9ddc9a5d82f%3A0xbed62bfa86ffc065!2sHilton%20Garden%20Inn%20Edison%2FRaritan%20Center!5e0!3m2!1sru!2sru!4v1626531878634!5m2!1sru!2sru" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+                            
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
         
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    
     </body>
+
 </html>
