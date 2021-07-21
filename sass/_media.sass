@@ -2,8 +2,9 @@
  .container
   width: 910px
 
- .slider
-  width: 550px
+ .hotel
+  &-slider
+   width: 550px
 
 @media(max-width: 992px)
  .container, .newsletter-container
@@ -31,12 +32,13 @@
  .hotel
   &-grid
    flex-wrap: wrap
- .slider
-  width: 700px
-  margin-bottom: 30px
+  &-slider
+   width: 700px
+   margin-bottom: 30px
 
  .price
   &-map
+   display: flex
    flex-direction: row
    width: 100%
  .booking
@@ -87,8 +89,10 @@
     flex-basis: auto
    &-grid
     width: 100%
- .slider
-  width: 100%
+  &-slider
+   width: 100%
+   &__container
+    height: 382px
  .price
   &-map
    flex-direction: column
@@ -111,13 +115,13 @@
  .container, .newsletter-container
   width: 560px
   max-width: 92%
- .slider
-  height: 179px
- .swiper
-  &-container
-   height: 100%
-  &-slide
-   height: 100%
+ .hotel
+  &-slider
+   height: 179px
+   &__container
+    height: 100%
+   &__slide
+    height: 100%
    &__image
     width: 100%
  .email-form
