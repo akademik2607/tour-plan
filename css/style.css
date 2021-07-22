@@ -378,17 +378,18 @@ template {
 
 /* line 3, ../sass/_settings.sass */
 body {
+  background-color: #f5fafe;
   font-family: Mulish, sans-serif;
   color: #333333;
 }
 
-/* line 6, ../sass/_settings.sass */
+/* line 7, ../sass/_settings.sass */
 .container {
   width: 1110px;
   margin: auto;
 }
 
-/* line 9, ../sass/_settings.sass */
+/* line 10, ../sass/_settings.sass */
 img {
   max-width: 100%;
 }
@@ -632,22 +633,22 @@ img {
   tranxform: translateY(-50%);
   background-color: transparent;
 }
-/* line 78, ../sass/blocks/_hotel.sass */
-.hotel-slider--prev {
+/* line 79, ../sass/blocks/_hotel.sass */
+.hotel-slider-button--prev {
   background-image: url("../img/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
 }
-/* line 83, ../sass/blocks/_hotel.sass */
-.hotel-slider--next {
+/* line 84, ../sass/blocks/_hotel.sass */
+.hotel-slider-button--next {
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   right: 0;
 }
-/* line 88, ../sass/blocks/_hotel.sass */
-.hotel__image {
+/* line 89, ../sass/blocks/_hotel.sass */
+.hotel-slider__image {
   border-radius: 8px;
   max-width: 100%;
   height: 100%;
@@ -655,7 +656,7 @@ img {
   height: 457px;
 }
 
-/* line 95, ../sass/blocks/_hotel.sass */
+/* line 96, ../sass/blocks/_hotel.sass */
 .ratting {
   display: flex;
   flex-direction: column;
@@ -667,19 +668,19 @@ img {
   border-radius: 4px;
   color: #ffffff;
 }
-/* line 105, ../sass/blocks/_hotel.sass */
+/* line 106, ../sass/blocks/_hotel.sass */
 .ratting__text {
   font-size: 8px;
   font-weight: 600;
   line-height: 10px;
 }
-/* line 109, ../sass/blocks/_hotel.sass */
+/* line 110, ../sass/blocks/_hotel.sass */
 .ratting__counter {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
 }
-/* line 114, ../sass/blocks/_hotel.sass */
+/* line 115, ../sass/blocks/_hotel.sass */
 .ratting__counter_smal-text {
   font-size: 10px;
   font-weight: 700;
@@ -720,7 +721,7 @@ img {
  *   background-position: center
  *   width: 100%
  *   height: 100%
- *   border-radius: 8px*/
+ *   border-radius: 8px
  * &-button
  *  width: 30px
  *  height: 30px
@@ -740,14 +741,14 @@ img {
  *   background-repeat: no-repeat
  *   background-position: center 
  *   right: 0 */
-/* line 176, ../sass/blocks/_hotel.sass */
+/* line 177, ../sass/blocks/_hotel.sass */
 .price-map {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* line 180, ../sass/blocks/_hotel.sass */
+/* line 181, ../sass/blocks/_hotel.sass */
 .booking {
   width: 350px;
   min-height: 210px;
@@ -756,42 +757,42 @@ img {
   border-radius: 8px;
   color: #ffffff;
 }
-/* line 187, ../sass/blocks/_hotel.sass */
+/* line 188, ../sass/blocks/_hotel.sass */
 .booking__numbers {
   display: flex;
   justify-content: space-between;
 }
-/* line 190, ../sass/blocks/_hotel.sass */
+/* line 191, ../sass/blocks/_hotel.sass */
 .booking__price {
   display: flex;
   flex-direction: column;
   margin-bottom: 9px;
 }
-/* line 194, ../sass/blocks/_hotel.sass */
+/* line 195, ../sass/blocks/_hotel.sass */
 .booking__zoom {
   display: flex;
   flex-direction: column;
   margin-top: 3px;
 }
-/* line 198, ../sass/blocks/_hotel.sass */
+/* line 199, ../sass/blocks/_hotel.sass */
 .booking__start {
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
 }
-/* line 202, ../sass/blocks/_hotel.sass */
+/* line 203, ../sass/blocks/_hotel.sass */
 .booking__pricetag {
   font-size: 24px;
   font-weight: 800;
   line-height: 33px;
 }
-/* line 206, ../sass/blocks/_hotel.sass */
+/* line 207, ../sass/blocks/_hotel.sass */
 .booking__perroom {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
-/* line 210, ../sass/blocks/_hotel.sass */
+/* line 211, ../sass/blocks/_hotel.sass */
 .booking__item {
   display: flex;
   justify-content: space-between;
@@ -800,23 +801,23 @@ img {
   font-weight: 400;
   line-height: 16px;
 }
-/* line 218, ../sass/blocks/_hotel.sass */
+/* line 219, ../sass/blocks/_hotel.sass */
 .booking__icon {
   margin-right: 14px;
   width: 14px;
 }
-/* line 221, ../sass/blocks/_hotel.sass */
+/* line 222, ../sass/blocks/_hotel.sass */
 .booking__phone {
   display: flex;
   justify-content: space-between;
 }
-/* line 224, ../sass/blocks/_hotel.sass */
+/* line 225, ../sass/blocks/_hotel.sass */
 .booking__text {
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
 }
-/* line 228, ../sass/blocks/_hotel.sass */
+/* line 229, ../sass/blocks/_hotel.sass */
 .booking__num {
   font-size: 18px;
   font-weight: 600;
@@ -824,15 +825,15 @@ img {
   color: inherit;
   text-decoration: none;
 }
-/* line 234, ../sass/blocks/_hotel.sass */
+/* line 235, ../sass/blocks/_hotel.sass */
 .booking__tel {
   margin-right: 8px;
 }
-/* line 236, ../sass/blocks/_hotel.sass */
+/* line 237, ../sass/blocks/_hotel.sass */
 .booking__phone {
   margin-bottom: 17px;
 }
-/* line 238, ../sass/blocks/_hotel.sass */
+/* line 239, ../sass/blocks/_hotel.sass */
 .booking__button {
   padding: 13px 0;
   background-color: #EC1F46;
@@ -846,7 +847,7 @@ img {
   width: 100%;
 }
 
-/* line 249, ../sass/blocks/_hotel.sass */
+/* line 250, ../sass/blocks/_hotel.sass */
 .map {
   border-radius: 10px;
   overflow: hidden;
@@ -934,6 +935,129 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+/* line 1, ../sass/blocks/_reviews.sass */
+.reviews {
+  padding: 40px 0 60px 0;
+}
+/* line 3, ../sass/blocks/_reviews.sass */
+.reviews__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+/* line 13, ../sass/blocks/_reviews.sass */
+.reviews-slider__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 17, ../sass/blocks/_reviews.sass */
+.reviews-slider__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+/* line 25, ../sass/blocks/_reviews.sass */
+.reviews-slider__contant {
+  background-color: #fff;
+  padding: 0 95px 30px 99px;
+  max-width: 731px;
+  margin: auto;
+  position: relative;
+}
+/* line 31, ../sass/blocks/_reviews.sass */
+.reviews-slider__contant:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  background-image: url("../img/quotes-open.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 13px;
+  left: 64px;
+}
+/* line 41, ../sass/blocks/_reviews.sass */
+.reviews-slider__contant:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  background-image: url("../img/quotes-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 119px;
+  right: 60px;
+}
+/* line 51, ../sass/blocks/_reviews.sass */
+.reviews-slider__slide {
+  margin-top: 45px;
+}
+/* line 53, ../sass/blocks/_reviews.sass */
+.reviews-slider__button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+/* line 61, ../sass/blocks/_reviews.sass */
+.reviews-slider-button--prev {
+  background-image: url(../img/reviews-prev.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+}
+/* line 66, ../sass/blocks/_reviews.sass */
+.reviews-slider-button--next {
+  background-image: url(../img/reviews-next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+/* line 73, ../sass/blocks/_reviews.sass */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -45px;
+}
+/* line 79, ../sass/blocks/_reviews.sass */
+.profile__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+/* line 85, ../sass/blocks/_reviews.sass */
+.profile__date {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+}
+/* line 91, ../sass/blocks/_reviews.sass */
+.profile__image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @media(max-width: 1200px) {
@@ -1081,10 +1205,8 @@ img {
   /* line 92, ../sass/_media.sass */
   .hotel-slider {
     width: 100%;
-  }
-  /* line 94, ../sass/_media.sass */
-  .hotel-slider__container {
-    height: 382px;
+    /*&__container
+     * height: 382px */
   }
 
   /* line 97, ../sass/_media.sass */
@@ -1115,38 +1237,66 @@ img {
   .newsletter-text {
     margin-bottom: 37px;
   }
+
+  /* line 115, ../sass/_media.sass */
+  .reviews-slider__button {
+    top: 45px;
+  }
+  /* line 118, ../sass/_media.sass */
+  .reviews-slider-button--next {
+    right: 50%;
+    transform: translate(110px, -16px);
+  }
+  /* line 121, ../sass/_media.sass */
+  .reviews-slider-button--prev {
+    left: 50%;
+    transform: translate(-110px, -16px);
+  }
+  /* line 125, ../sass/_media.sass */
+  .reviews-slider__contant:before {
+    display: none;
+  }
+  /* line 127, ../sass/_media.sass */
+  .reviews-slider__contant:after {
+    display: none;
+  }
+  /* line 129, ../sass/_media.sass */
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 @media(max-width: 600px) {
-  /* line 115, ../sass/_media.sass */
+  /* line 136, ../sass/_media.sass */
   .container, .newsletter-container {
     width: 560px;
     max-width: 92%;
   }
 
-  /* line 119, ../sass/_media.sass */
+  /* line 140, ../sass/_media.sass */
   .hotel-slider {
     height: 179px;
   }
-  /* line 121, ../sass/_media.sass */
+  /* line 142, ../sass/_media.sass */
   .hotel-slider__container {
     height: 100%;
   }
-  /* line 123, ../sass/_media.sass */
+  /* line 144, ../sass/_media.sass */
   .hotel-slider__slide {
     height: 100%;
   }
-  /* line 125, ../sass/_media.sass */
+  /* line 146, ../sass/_media.sass */
   .hotel-slider__image {
     width: 100%;
   }
 
-  /* line 127, ../sass/_media.sass */
+  /* line 148, ../sass/_media.sass */
   .email-form {
     width: 280px;
   }
 }
 @media(max-width: 320px) {
-  /* line 130, ../sass/_media.sass */
+  /* line 153, ../sass/_media.sass */
   .container {
     width: 278px;
   }

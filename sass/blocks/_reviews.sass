@@ -1,0 +1,95 @@
+.reviews
+ padding: 40px 0 60px 0
+ &__title
+  text-align: center
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 45px
+  text-transform: uppercase
+  margin-bottom: 70px
+  margin-top: 0
+ &-slider
+  &__container
+   display: flex
+   flex-direction: column
+   align-items: center
+  &__text
+   font-style: normal
+   font-weight: normal
+   font-size: 12px
+   line-height: 160%
+   text-align: justify
+   margin-bottom: 0
+   margin-top: 6px
+  &__contant
+   background-color: #fff
+   padding: 0 95px 30px 99px
+   max-width: 731px
+   margin: auto
+   position: relative
+   &:before
+    content: ''
+    position: absolute
+    width: 70px
+    height: 48px
+    background-image: url('../img/quotes-open.svg')
+    background-position: center
+    background-repeat: no-repeat
+    top: 13px
+    left: 64px
+   &:after
+    content: ''
+    position: absolute
+    width: 70px
+    height: 48px
+    background-image: url('../img/quotes-close.svg')
+    background-position: center
+    background-repeat: no-repeat
+    top: 119px
+    right: 60px
+  &__slide
+   margin-top: 45px
+  &__button
+   width: 30px
+   height: 30px
+   position: absolute
+   top: 50%
+   transform: translateY(-50%)
+   z-index: 9999
+  &-button
+   &--prev
+    background-image: url(../img/reviews-prev.svg)
+    background-position: center
+    background-repeat: no-repeat
+    left: 0
+   &--next
+    background-image: url(../img/reviews-next.svg)
+    background-position: center
+    background-repeat: no-repeat
+    right: 0
+   
+   
+.profile 
+ display: flex
+ flex-direction: column
+ align-items: center
+ position: relative
+ top: -45px
+ &__name
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  color: $primary
+ &__date
+  font-family: Mulish
+  font-style: normal
+  font-weight: normal
+  font-size: 10px
+  line-height: 13px
+ &__image
+  width: 90px
+  height: 90px
+  border-radius: 50%
+  object-fit: cover

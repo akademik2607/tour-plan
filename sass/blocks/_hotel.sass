@@ -75,22 +75,23 @@
    border: none
    tranxform: translateY(-50%)
    background-color: transparent
-  &--prev
-   background-image: url('../img/arrow-left.svg')
-   background-repeat: no-repeat
-   background-position: center 
-   left: 0
-  &--next
-   background-image: url('../img/arrow-right.svg')
-   background-repeat: no-repeat
-   background-position: center 
-   right: 0
- &__image
-  border-radius: 8px
-  max-width: 100%
-  height: 100%
-  object-fit: cover
-  height: 457px
+  &-button
+   &--prev
+    background-image: url('../img/arrow-left.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    left: 0
+   &--next
+    background-image: url('../img/arrow-right.svg')
+    background-repeat: no-repeat
+    background-position: center 
+    right: 0
+  &__image
+   border-radius: 8px
+   max-width: 100%
+   height: 100%
+   object-fit: cover
+   height: 457px
 
 .ratting
  display: flex
@@ -151,7 +152,7 @@
    background-position: center
    width: 100%
    height: 100%
-   border-radius: 8px*/
+   border-radius: 8px
  &-button
   width: 30px
   height: 30px
@@ -170,7 +171,7 @@
    background-image: url('../img/arrow-right.svg')
    background-repeat: no-repeat
    background-position: center 
-   right: 0
+   right: 0*/
 
 .price
  &-map

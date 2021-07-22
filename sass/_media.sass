@@ -91,8 +91,8 @@
     width: 100%
   &-slider
    width: 100%
-   &__container
-    height: 382px
+   /*&__container
+    height: 382px*/
  .price
   &-map
    flex-direction: column
@@ -110,6 +110,27 @@
    flex-direction: column
   &-text
    margin-bottom: 37px
+ .reviews
+  &-slider
+   &__button
+    top: 45px
+   &-button
+    &--next
+     right: 50%
+     transform: translate(110px, -16px)
+    &--prev
+     left: 50%
+     transform: translate(-110px, -16px)
+   &__contant
+    &:before
+     display: none
+    &:after
+     display: none
+  &__title
+   font-size: 30px
+   line-height: 38px
+  
+
 
 @media(max-width: 600px)
  .container, .newsletter-container
@@ -126,6 +147,8 @@
     width: 100%
  .email-form
   width: 280px
+  
+
 @media(max-width: 320px)
  .container
   width: 278px
