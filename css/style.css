@@ -1143,6 +1143,7 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   padding: 7px 22px;
+  cursor: pointer;
 }
 
 @media(max-width: 1200px) {
