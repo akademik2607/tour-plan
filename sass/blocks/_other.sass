@@ -1,0 +1,171 @@
+.other
+ &-packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+   ont-family: Mulish
+   font-style: normal
+   font-weight: bold
+   font-size: 36px
+   line-height: 45px
+   text-align: center
+   text-transform: uppercase
+   marigin-top: 0
+   margin-bottom: 65px
+  &__grid
+   display: grid
+   grid-template-columns: 1fr 1fr 1fr
+   grid-template-rows: 1fr 1fr
+   grid-column-gap: 2%
+   grid-row-gap: 30px
+.packages
+ &-grid
+  &__item
+   &:first-child
+    grid-column-start: 1
+
+.grid
+ &-card
+  height: 500px
+  display: grid
+  grid-template: 1fr 1fr/ 1fr
+  overflow: hidden
+  border-radius: 8px
+  grid-column-end: span 1
+  &--open
+   grid-column-end: span 2
+   grid-template: 1fr / 1fr 1fr
+  &--3open
+   height: 100%
+   grid-row-end: span 2
+   grid-template-rows: 2fr 2fr
+
+  &__img
+   width: 100%
+   height: 250px
+   position: relative
+  &--open-img
+   height: 100%
+  &--3open-img
+   height: 100%
+  &__photo
+   height: 100%
+   width: 100%
+   object-fit: cover
+  &__flash
+   position: absolute
+   top: 26px
+   left: 0
+   font-family: Mulish
+   font-style: normal
+   font-weight: 600
+   font-size: 8px
+   line-height: 10px
+   color: $light
+   padding: 4px 9px
+   background-color: $primary
+   border-radius: 0 4px 4px 0
+  &__title
+   font-family: Mulish
+   font-style: normal
+   font-weight: bold
+   font-size: 18px
+   line-height: 23px
+   color: $light
+   margin-top: 0
+   margin-bottom: 0 
+  &__paragraph
+   font-family: Mulish
+   font-style: normal
+   font-weight: normal
+   font-size: 14px
+   line-height: 160.6%
+   color: $light
+  &__wrapper
+   background-color: $dark
+   display: grid
+   padding: 30px 21px 30px 32px
+  &__text
+   font-family: Mulish
+   font-style: normal
+   font-weight: normal
+   font-size: 12px
+   line-height: 15px
+   color: $light
+   margin-top: 0
+   display: flex
+   align-items: center
+  &__address
+   &:before
+    content: ''
+    display: inline-block
+    width: 14px
+    height: 14px
+    margin-right: 14px
+    background-image: url('../img/map-pin.svg')
+    background-position: center
+    background-repeat: no-repeat
+  &__guests
+   &:before
+    content: ''
+    display: inline-block
+    width: 14px
+    height: 14px
+    margin-right: 14px
+    background-image: url('../img/user.svg')
+    background-position: center
+    background-repeat: no-repeat
+  &__rooms
+   &:before
+    content: ''
+    display: inline-block
+    width: 14px
+    height: 14px
+    margin-right: 14px
+    background-image: url('../img/room.svg')
+    background-position: center
+    background-repeat: no-repeat 
+  &__old
+   text-decoration: line-through
+   font-family: Mulish
+   font-style: normal
+   font-weight: normal
+   font-size: 14px
+   line-height: 18px
+   color: $light
+  &__buy
+   display: flex
+   justify-content: space-between
+   align-items: center
+  &__sum
+   font-family: Mulish
+   font-style: normal
+   font-weight: bold
+   font-size: 24px
+   line-height: 30px
+   color: $light
+  &__button
+   font-family: Nunito
+   font-style: normal
+   font-weight: 600
+   font-size: 14px
+   line-height: 19px
+   color: $light
+   background-color: $primary
+   padding: 11px 27px
+   border-radius: 4px
+   border: none
+   cursor: pointer
+  &--hidden
+   display: none
+.card
+ &-flesh
+  &--open
+   font-family: Mulish
+   font-style: normal
+   font-weight: 600
+   font-size: 12px
+   line-height: 15px
+   padding: 8px 12px
+
+
