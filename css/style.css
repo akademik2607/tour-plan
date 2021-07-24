@@ -1051,12 +1051,16 @@ img {
   border: none;
   cursor: pointer;
 }
-/* line 159, ../sass/blocks/_other.sass */
-.grid-card--hidden {
+/* line 160, ../sass/blocks/_other.sass */
+.grid-card-ratting--hidden {
+  display: none;
+}
+/* line 163, ../sass/blocks/_other.sass */
+.grid-card-paragraph--hidden {
   display: none;
 }
 
-/* line 163, ../sass/blocks/_other.sass */
+/* line 167, ../sass/blocks/_other.sass */
 .card-flesh--open {
   font-family: Mulish;
   font-style: normal;
