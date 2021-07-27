@@ -1169,32 +1169,28 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
 }
-/* line 23, ../sass/blocks/_footer.sass */
+/* line 19, ../sass/blocks/_footer.sass */
 .footer__link {
   text-decoration: none;
   color: #bdbdbd;
 }
-/* line 26, ../sass/blocks/_footer.sass */
+/* line 22, ../sass/blocks/_footer.sass */
 .footer__wrapper {
   display: grid;
   grid-template-columns: 25% 25% 27% 23%;
   grid-template-rows: minmax(max-content, auto) minmax(max-content, auto) 94px minmax(max-content, auto);
 }
-/* line 30, ../sass/blocks/_footer.sass */
+/* line 26, ../sass/blocks/_footer.sass */
 .footer__logo {
   grid-row-start: span 2;
   align-self: end;
 }
-/* line 35, ../sass/blocks/_footer.sass */
+/* line 31, ../sass/blocks/_footer.sass */
 .footer__categories {
   grid-row-start: span 2;
 }
-/* line 38, ../sass/blocks/_footer.sass */
+/* line 34, ../sass/blocks/_footer.sass */
 .footer__social-network {
   margin-top: 18px;
   grid-row-start: 2;
@@ -1202,24 +1198,24 @@ img {
   grid-column-start: 3;
   grid-column-end: span 2;
 }
-/* line 45, ../sass/blocks/_footer.sass */
+/* line 41, ../sass/blocks/_footer.sass */
 .footer__contact-details {
   grid-row-start: 4;
   grid-column-start: span 2;
 }
-/* line 49, ../sass/blocks/_footer.sass */
+/* line 45, ../sass/blocks/_footer.sass */
 .footer__message {
   grid-row-start: 4;
   grid-column-start: 3;
   grid-column-end: span 2;
 }
-/* line 53, ../sass/blocks/_footer.sass */
+/* line 49, ../sass/blocks/_footer.sass */
 .footer__conditions {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   margin-top: 102px;
 }
-/* line 58, ../sass/blocks/_footer.sass */
+/* line 54, ../sass/blocks/_footer.sass */
 .footer-conditions__list {
   margin: 0;
   padding: 0;
@@ -1227,7 +1223,7 @@ img {
   grid-column-start: 2;
   display: flex;
 }
-/* line 64, ../sass/blocks/_footer.sass */
+/* line 60, ../sass/blocks/_footer.sass */
 .footer-conditions__item {
   margin-left: 10px;
   font-family: Mulish;
@@ -1237,22 +1233,22 @@ img {
   line-height: 15px;
   color: #ffffff;
 }
-/* line 72, ../sass/blocks/_footer.sass */
+/* line 68, ../sass/blocks/_footer.sass */
 .footer-conditions__link {
   text-decoration: none;
   color: #bdbdbd;
 }
-/* line 76, ../sass/blocks/_footer.sass */
+/* line 72, ../sass/blocks/_footer.sass */
 .footer-conditions__pay-systems {
   justify-self: end;
 }
 
-/* line 80, ../sass/blocks/_footer.sass */
+/* line 76, ../sass/blocks/_footer.sass */
 .social-network {
   display: flex;
   align-items: center;
 }
-/* line 83, ../sass/blocks/_footer.sass */
+/* line 79, ../sass/blocks/_footer.sass */
 .social-network__list {
   margin: 0;
   padding: 0;
@@ -1265,7 +1261,7 @@ img {
   flex-basis: 15%;
 }
 
-/* line 96, ../sass/blocks/_footer.sass */
+/* line 92, ../sass/blocks/_footer.sass */
 .contact-details__description {
   display: block;
   font-family: Mulish;
@@ -1276,13 +1272,13 @@ img {
   color: #bdbdbd;
   margin-bottom: 22px;
 }
-/* line 105, ../sass/blocks/_footer.sass */
+/* line 101, ../sass/blocks/_footer.sass */
 .contact-details__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 109, ../sass/blocks/_footer.sass */
+/* line 105, ../sass/blocks/_footer.sass */
 .contact-details__item {
   font-family: Mulish;
   font-style: normal;
@@ -1294,19 +1290,19 @@ img {
   display: flex;
   align-items: flex-start;
 }
-/* line 119, ../sass/blocks/_footer.sass */
+/* line 115, ../sass/blocks/_footer.sass */
 .contact-details__icon {
   margin-top: 3px;
   margin-right: 22px;
 }
 
-/* line 123, ../sass/blocks/_footer.sass */
+/* line 119, ../sass/blocks/_footer.sass */
 .form-message {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 127, ../sass/blocks/_footer.sass */
+/* line 123, ../sass/blocks/_footer.sass */
 .form-message__field {
   padding: 18px 23px;
   font-family: Mulish;
@@ -1317,17 +1313,17 @@ img {
   border-radius: 4px;
   border: none;
 }
-/* line 136, ../sass/blocks/_footer.sass */
+/* line 132, ../sass/blocks/_footer.sass */
 .form-message__input {
   flex-basis: 48%;
 }
-/* line 138, ../sass/blocks/_footer.sass */
+/* line 134, ../sass/blocks/_footer.sass */
 .form-message__textarea {
   flex-basis: 100%;
   margin-top: 15px;
   margin-bottom: 22px;
 }
-/* line 142, ../sass/blocks/_footer.sass */
+/* line 138, ../sass/blocks/_footer.sass */
 .form-message__button {
   font-family: Mulish;
   font-style: normal;
@@ -1341,14 +1337,14 @@ img {
   border: none;
   cursor: pointer;
 }
-/* line 154, ../sass/blocks/_footer.sass */
+/* line 150, ../sass/blocks/_footer.sass */
 .form-message__wrapper {
   display: flex;
   justify-content: space-between;
   flex-basis: 100%;
   align-items: center;
 }
-/* line 159, ../sass/blocks/_footer.sass */
+/* line 155, ../sass/blocks/_footer.sass */
 .form-message__requared {
   font-family: Mulish;
   font-style: normal;
