@@ -54,6 +54,43 @@
  .card
   flex-basis: 49%
   margin-bottom: 20px
+
+ .footer
+  &__wrapper
+   grid-template-columns: 30% 35% 35%
+   grid-row-gap: 38px
+   grid-template-rows: minmax(max-content, auto) minmax(max-content, auto) 22px minmax(max-content, auto)
+  &__logo
+   grid-row-start: span 1
+   width: 104px
+  &-contact
+   &__details
+    grid-column-start: span 3
+  &__social
+   &-network
+    grid-row-start: 1
+    grid-column-start: 2
+    grid-column-end: span2
+   &__categories
+    grid-row-start: 3
+   &__additional
+    grid-row-start: 3
+   &__information
+    grid-row-start: 3
+  &__message
+   grid-row-start: 5
+   grid-column-start: 1
+   grid-column-end: span 2
+  &-conditions
+   &__list 
+    grid-column-start: 1
+   &__item
+    &:first-child
+     margin-left: 0
+   &__pay
+    &-systems
+     grid-column-start: 3
+
 @media(max-width: 768px)
  .container
   width: 576px
@@ -139,6 +176,56 @@
    font-size: 30px
    line-height: 38px
   
+ .footer
+  &__wrapper
+   grid-template-columns: 1fr
+   grid-template-rows: minmax(max-content, auto) minmax(max-content, auto) minmax(max-content, auto) minmax(max-content, auto) minmax(max-content, auto) minmax(max-content, auto) minmax(max-content, auto)
+  &__logo
+   grid-column-start: 1 
+   grid-column-end: span 1
+   grid-row-start: 1 
+   grid-row-end: span 1 
+
+  &__categories
+   grid-column-start: 1 
+   grid-column-end: span 1
+   grid-row-start: 5 
+   grid-row-end: span 1 
+  &__additional
+   grid-column-start: 1 
+   grid-column-end: span 1
+   grid-row-start: 4 
+   grid-row-end: span 1 
+  &__social
+   &-network
+    grid-column-start: 1 
+    grid-column-end: span 1
+    grid-row-start: 2 
+    grid-row-end: span 1 
+  &__information
+   grid-column-start: 1 
+   grid-column-end: span 1
+   grid-row-start: 3 
+   grid-row-end: span 1 
+  &__contact
+   &-details
+    grid-column-start: 1 
+    grid-column-end: span 1
+    grid-row-start: 6 
+    grid-row-end: span 1 
+  &__message
+   grid-column-start: 1 
+   grid-column-end: span 1
+   grid-row-start: 7 
+   grid-row-end: span 1 
+
+   
+  
+    
+   
+   
+ 
+ 
 
 
 @media(max-width: 600px)
@@ -167,6 +254,39 @@
   flex-basis: 100%
   
 
+@media(max-width: 576px)
+ .footer
+  padding-bottom: 20px
+  &-conditions
+   grid-template-columns: 1fr
+   grid-template-rows: minmax(max-content, auto) minmax(max-content, auto)
+   margin-top: 30px
+   margin-bottom: 10px
+   &__list
+    grid-column-start: 1
+    grid-row-start: 1
+   &__pay
+    &-systems
+     grid-column-start: 1
+     grid-row-start: 2
+     justify-self: start
+
+ .form
+  &-message
+   &__input
+    flex-basis: 100%
+    margin-bottom: 15px
+   &__textarea
+    margin-top: 0
+    margin-bottom: 15px
+   &__wrapper
+    flex-direction: column
+    align-items: flex-start
+   &__requared
+    order: -1
+    margin-bottom: 15px
+
 @media(max-width: 320px)
  .container
   width: 278px
+  
