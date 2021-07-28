@@ -2,11 +2,12 @@
  .container
   width: 910px
 
- .slider
-  width: 550px
+ .hotel
+  &-slider
+   width: 550px
 
 @media(max-width: 992px)
- .container
+ .container, .newsletter-container
   width: 700px
  .header
   &-top
@@ -31,12 +32,13 @@
  .hotel
   &-grid
    flex-wrap: wrap
- .slider
-  width: 700px
-  margin-bottom: 30px
+  &-slider
+   width: 700px
+   margin-bottom: 30px
 
  .price
   &-map
+   display: flex
    flex-direction: row
    width: 100%
  .booking
@@ -87,8 +89,10 @@
     flex-basis: auto
    &-grid
     width: 100%
- .slider
-  width: 100%
+  &-slider
+   width: 100%
+   /*&__container
+    height: 382px*/
  .price
   &-map
    flex-direction: column
@@ -100,20 +104,51 @@
  .map
   width: 100%
   flex-basis: 100%
+ .newsletter
+  &-container
+   width: 576px
+   flex-direction: column
+  &-text
+   margin-bottom: 37px
+ .reviews
+  &-slider
+   &__button
+    top: 45px
+   &-button
+    &--next
+     right: 50%
+     transform: translate(110px, -16px)
+    &--prev
+     left: 50%
+     transform: translate(-110px, -16px)
+   &__contant
+    &:before
+     display: none
+    &:after
+     display: none
+  &__title
+   font-size: 30px
+   line-height: 38px
+  
+
 
 @media(max-width: 600px)
- .container
+ .container, .newsletter-container
   width: 560px
   max-width: 92%
- .slider
-  height: 179px
- .swiper
-  &-container
-   height: 100%
-  &-slide
-   height: 100%
+ .hotel
+  &-slider
+   height: 179px
+   &__container
+    height: 100%
+   &__slide
+    height: 100%
    &__image
     width: 100%
+ .email-form
+  width: 280px
+  
+
 @media(max-width: 320px)
  .container
   width: 278px
