@@ -41,11 +41,11 @@
                 <div class="container">
                     <div class="header-wrapper">
                         <a href="#" class="logo" ><img src="./img/horisontal-logo.svg" alt="Logo: Best Tour Plan"></a>
-                        <form action="#" class="search-form">
+                        <form action="#" class="search-form search-form--mobile_hidden">
                             <input type="text" class="search-form__input" placeholder="Search Location">
                             <button class="search-form__button"><img src="./img/search.svg" alt="Search: image"></button>
                         </form>
-                        <a href="#" class="user">
+                        <a href="#" class="user user--mobile_hidden">
                             <img class="user__image" src="./img/user-photo.jpeg" alt="Avatar: Nathan">
                             <span class="user__name">Nathan</span>
                         </a>
@@ -57,10 +57,22 @@
                     </div>
                 </div>
             </div>
-            <div class="navbar">
+            <div class="navbar navbar--mobile_visible">
                 <div class="container">
                     <nav class="navbar-menu">
                         <ul class="navbar-menu__list">
+                            <li class="navbar-menu__item">
+                                <a href="#" class="user user--mobile_visible">
+                                    <img class="user__image" src="./img/user-photo.jpeg" alt="Avatar: Nathan">
+                                    <span class="user__name user__name--light">Nathan</span>
+                                </a>
+                            </li>
+                            <li class="navbar-menu__item">
+                                <form action="#" class="search-form search-form--mobile_visible">
+                                    <input type="text" class="search-form__input" placeholder="Search Location">
+                                    <button class="search-form__button"><img src="./img/search.svg" alt="Search: image"></button>
+                                </form>
+                            </li>
                             <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">All deals</a></li>
                             <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Hotels</a></li>
                             <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Activities</a></li>
