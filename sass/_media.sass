@@ -7,6 +7,41 @@
    width: 550px
  .card
   width: 215px
+ .footer
+  &__wrapper
+   grid-template-columns: 30% 35% 35%
+   grid-row-gap: 38px
+   grid-template-rows: minmax(max-content, auto) minmax(max-content, auto) 22px minmax(max-content, auto)
+  &__logo
+   grid-row-start: span 1
+   width: 104px
+  &-contact
+   &__details
+    grid-column-start: span 3
+  &__social
+   &-network
+    grid-row-start: 1
+    grid-column-start: 2
+    grid-column-end: span2
+   &__categories
+    grid-row-start: 3
+   &__additional
+    grid-row-start: 3
+   &__information
+    grid-row-start: 3
+  &__message
+   grid-row-start: 5
+   grid-column-start: 1
+   grid-column-end: span 2
+  &-conditions
+   &__list 
+    grid-column-start: 1
+   &__item
+    &:first-child
+     margin-left: 0
+   &__pay
+    &-systems
+     grid-column-start: 3
 
 @media(max-width: 992px)
  .container, .newsletter-container
@@ -94,6 +129,8 @@
 @media(max-width: 768px)
  .container
   width: 576px
+ body
+  padding-top: 70px
  .header
   &-top
    padding-top: 28px
@@ -164,9 +201,12 @@
     &_visible
      display: flex
      
+ .breadcrumbs
+  padding-bottom: 26px
 
 
  .hotel
+  padding-top: 0
   &-info
    &__text
     flex-basis: 100%
@@ -300,6 +340,13 @@
     height: 100%
    &__image
     width: 100%
+    height: 100%
+    object-fit: cover
+ .reviews
+  &-slider
+   &__contant
+    padding-right: 29px
+    padding-left: 33px
  .email-form
   width: 280px
  .activities
