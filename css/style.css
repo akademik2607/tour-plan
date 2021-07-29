@@ -1380,6 +1380,11 @@ img {
   color: #e0e0e0;
 }
 
+/* line 1, ../sass/_thankyou.sass */
+.thanks {
+  padding: 30px 0 50px 0;
+}
+
 @media(max-width: 1200px) {
   /* line 2, ../sass/_media.sass */
   .container {
