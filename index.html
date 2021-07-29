@@ -150,7 +150,7 @@
                                 <span class="booking__text">Quick Booking</span>
                                 <a class="booking__num" href="tel:12100"><img class="booking__icon booking__tel" src="./img/phone.svg" alt="phone-icon">12100</a>
                             </div>
-                            <button class="booking__button">View Other Options</button>
+                            <button data-type="modal" class="booking__button">View Other Options</button>
                             
                         </div>
                         <div id="map" class="map">
@@ -329,6 +329,24 @@
                 </div>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <a class="modal__close" href="#"><img src="./img/close.svg" alt="icon: close"></a>
+                <h3 class="modal__title">Booking</h3>
+                <form class="modal__form modal-message" action="send.php" method="POST">
+                    <input class="modal-message__input modal-message__field" type="text" name="name" value="" placeholder="Your Full Name*">
+                    <input class="modal-message__input modal-message__field" type="text" name="phone" value="" placeholder="Phone Number*">
+                    <input type="text"  name="email" class="modal-message__input modal-message__field" placeholder="Your email address">
+                    <textarea class="modal-message__textarea modal-message__field" name="message" placeholder="Message" rows="8" cols="40"></textarea>
+                    <div class="modal-message__wrapper">
+                        <button class="modal-message__button" type="submit">Send</button>
+                        <span class="modal-message__requared">* Required Fields</span>
+                    </div>
+                </form>
+        </div>
+                
+            </div>
         
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>

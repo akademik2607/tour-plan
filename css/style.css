@@ -1389,6 +1389,100 @@ img {
   padding: 30px 0 50px 0;
 }
 
+/* line 2, ../sass/blocks/_modal.sass */
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 12, ../sass/blocks/_modal.sass */
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+/* line 15, ../sass/blocks/_modal.sass */
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background-color: #0A223D;
+  color: #ffffff;
+  padding: 33px 88px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 27, ../sass/blocks/_modal.sass */
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+/* line 31, ../sass/blocks/_modal.sass */
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+}
+/* line 35, ../sass/blocks/_modal.sass */
+.modal__title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 43, ../sass/blocks/_modal.sass */
+.modal-message {
+  display: flex;
+  flex-direction: column;
+}
+/* line 46, ../sass/blocks/_modal.sass */
+.modal-message__field {
+  padding: 18px 23px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 15px;
+}
+/* line 56, ../sass/blocks/_modal.sass */
+.modal-message__input {
+  flex-basis: 100%;
+}
+/* line 58, ../sass/blocks/_modal.sass */
+.modal-message__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 62, ../sass/blocks/_modal.sass */
+.modal-message__button {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 18px 65px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 @media(max-width: 1200px) {
   /* line 2, ../sass/_media.sass */
   .container {
