@@ -40,3 +40,10 @@ $(window).scroll(function(){
     max:100 // максимальное положение (в %) на которое может смещаться фон
   });
 });
+
+let menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', () => {
+    document.querySelector('.navbar').classList.toggle('navbar--mobile_visible');    
+});
+

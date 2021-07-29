@@ -23,6 +23,7 @@
   padding-left: 23px
   padding-right: 75px
   overflow: hidden
+  background-color: #f5fafe
  &__button
   position: absolute
   width: 65px
@@ -32,12 +33,20 @@
   background-color: $primary
   border: none
   cursor: pointer
+ &--mobile
+  &_visible
+   display: none
+
 
 .user
  display: flex
  align-items: center
  text-decoration: none
  color: inherit
+ &--mobile
+  &_visible
+   display: none
+   
  &__image
   width: 40px
   height: 40px
@@ -53,9 +62,17 @@
   display: none
 .navbar
  background-color: #0A223D
+ &--mobile
+  &_visible
+   display: none
  &-menu
   padding-top: 31px
   padding-bottom: 31px
+  &__search
+   &-form
+    max-width: 100%
+  &__item
+   max-width: 100%
   &__list
    margin: 0
    padding: 0
