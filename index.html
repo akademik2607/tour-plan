@@ -40,7 +40,7 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-wrapper">
-                        <a href="#" class="logo" ><img src="./img/horisontal-logo.svg" alt="Logo: Best Tour Plan"></a>
+                        <a href="index.html" class="logo" ><img src="./img/horisontal-logo.svg" alt="Logo: Best Tour Plan"></a>
                         <form action="#" class="search-form search-form--mobile_hidden">
                             <input type="text" class="search-form__input" placeholder="Search Location">
                             <button class="search-form__button"><img src="./img/search.svg" alt="Search: image"></button>
@@ -61,13 +61,13 @@
                 <div class="container">
                     <nav class="navbar-menu">
                         <ul class="navbar-menu__list">
-                            <li class="navbar-menu__item nav-bar-menu__item--mobile_visible">
+                            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
                                 <a href="#" class="user user--mobile_visible">
                                     <img class="user__image" src="./img/user-photo.jpeg" alt="Avatar: Nathan">
                                     <span class="user__name user__name--light">Nathan</span>
                                 </a>
                             </li>
-                            <li class="navbar-menu__item">
+                            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
                                 <form action="#" class="navbar-menu__search-form search-form search-form--mobile_visible">
                                     <input type="text" class="search-form__input" placeholder="Search Location">
                                     <button class="search-form__button"><img src="./img/search.svg" alt="Search: image"></button>
@@ -150,7 +150,7 @@
                                 <span class="booking__text">Quick Booking</span>
                                 <a class="booking__num" href="tel:12100"><img class="booking__icon booking__tel" src="./img/phone.svg" alt="phone-icon">12100</a>
                             </div>
-                            <button class="booking__button">View Other Options</button>
+                            <button data-type="modal" class="booking__button">View Other Options</button>
                             
                         </div>
                         <div id="map" class="map">
@@ -246,7 +246,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
-                    <a class="footer__logo footer-logo" href="#"><img class="footer-logo__img" src="./img/vertical-logo.svg" alt="image:VerticalLogo"></a>
+                    <a class="footer__logo footer-logo" href="index.html"><img class="footer-logo__img" src="./img/vertical-logo.svg" alt="image:VerticalLogo"></a>
                     <div class="footer__categories">
                         <h3 class="footer__title">All Categories</h3>
                         <ul class="footer__list">
@@ -302,7 +302,7 @@
                                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                             </li>
                             <li class="contact-details__item"><img class="contact-details__icon" src="./img/contact-email.svg" alt="icon:contact-email">
-                                cherly.lawson@example.com
+                                <a class="footer__link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                             </li>
                         </ul>
                     </div>
@@ -329,6 +329,24 @@
                 </div>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog">
+                <a class="modal__close" href="#"><img src="./img/close.svg" alt="icon: close"></a>
+                <h3 class="modal__title">Booking</h3>
+                <form class="modal__form modal-message" action="send.php" method="POST">
+                    <input class="modal-message__input modal-message__field" type="text" name="name" value="" placeholder="Your Full Name*">
+                    <input class="modal-message__input modal-message__field" type="text" name="phone" value="" placeholder="Phone Number*">
+                    <input type="text"  name="email" class="modal-message__input modal-message__field" placeholder="Your email address">
+                    <textarea class="modal-message__textarea modal-message__field" name="message" placeholder="Message" rows="8" cols="40"></textarea>
+                    <div class="modal-message__wrapper">
+                        <button class="modal-message__button" type="submit">Send</button>
+                        <span class="modal-message__requared">* Required Fields</span>
+                    </div>
+                </form>
+        </div>
+                
+            </div>
         
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>

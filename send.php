@@ -11,7 +11,7 @@ $message;
 $email;
 $title; 
 $body;
-if($_POST['name'] && $_POST['phone']){
+if($_POST['name'] && $_POST['phone'] && !$_POST['email']){
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $message = $_POST['message'];
@@ -24,6 +24,23 @@ if($_POST['name'] && $_POST['phone']){
     <b>Телефон:</b> $phone<br><br>
     <b>Сообщение:</b><br>$message
     ";
+}else if($_POST['name'] && $_POST['phone'] && $_POST['email']){
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+    $email = $_POST['email'];
+
+    // Формирование самого письма
+    $title = "Писмо с сайта Tour Plan";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Почтовый адрес:</b> $email<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+
+
 }else if($_POST['email']){
     $email = $_POST['email'];
 
