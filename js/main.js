@@ -57,6 +57,7 @@ $(document).ready(function(){
             modalDialog = $('.modal__dialog');
         modalOverlay.addClass('modal__overlay--visible');
         modalDialog.addClass('modal__dialog--visible');
+        $('html').css('overflow', 'hidden');
     });
 
     close.on('click', function(event){
@@ -65,6 +66,7 @@ $(document).ready(function(){
             modalDialog = $('.modal__dialog');
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
+        $('html').css('overflow', 'auto');
     });
     $(document).keydown(function(event){
         if(event.code === 'Escape'){
@@ -72,6 +74,7 @@ $(document).ready(function(){
                 modalDialog = $('.modal__dialog');
             modalOverlay.removeClass('modal__overlay--visible');
             modalDialog.removeClass('modal__dialog--visible');
+            $('html').css('overflow', 'auto');
         }
     });
 
@@ -96,5 +99,8 @@ $(document).ready(function(){
         $.mask.definitions['~']='[+-]';
         $("[type=tel]").mask("~9 (999) 999-9999", {placeholder: "+7 (___) ___-____"});
     });
+
+    //Анимация
+    AOS.init();
 });
 

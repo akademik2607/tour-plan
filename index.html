@@ -4,16 +4,17 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Best Tour Plan - Hotel Booking</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" href="./css/aos.css">
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" >
         <link rel="stylesheet" href="./css/style.css">
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=5d618378-4689-4ca7-880b-b683b6cd61d2&lang=ru_RU" type="text/javascript"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=5d618378-4689-4ca7-880b-b683b6cd61d2&lang=ru_RU&loadByRequire=1" type="text/javascript"></script>
         <script type="text/javascript">
     // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
+    ymaps.load(init);
     function init(){
         // Создание карты.
         var myMap = new ymaps.Map("map", {
@@ -40,12 +41,12 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-wrapper">
-                        <a href="index.html" class="logo" ><img src="./img/horisontal-logo.svg" alt="Logo: Best Tour Plan"></a>
-                        <form action="#" class="search-form search-form--mobile_hidden">
+                        <a data-aos="fade-right" data-aos-duration="500" href="index.html" class="logo" ><img src="./img/horisontal-logo.svg" alt="Logo: Best Tour Plan"></a>
+                        <form data-aos="fade-down" data-aos-duration="500" action="#" class="search-form search-form--mobile_hidden">
                             <input type="text" class="search-form__input" placeholder="Search Location">
                             <button class="search-form__button"><img src="./img/search.svg" alt="Search: image"></button>
                         </form>
-                        <a href="#" class="user user--mobile_hidden">
+                        <a data-aos="fade-left" data-aos-duration="500" href="#" class="user user--mobile_hidden">
                             <img class="user__image" src="./img/user-photo.jpeg" alt="Avatar: Nathan">
                             <span class="user__name">Nathan</span>
                         </a>
@@ -134,7 +135,7 @@
                         </div>     
                     </div>
                     <div class="price-map">
-                        <div class="booking">
+                        <div data-aos="flip-left" data-aos-duration="500" class="booking">
                             <div class="booking__numbers">
                                 <div class="booking__price">
                                     <span class="booking__start">price starts as</span>
@@ -153,7 +154,7 @@
                             <button data-type="modal" class="booking__button">View Other Options</button>
                             
                         </div>
-                        <div id="map" class="map">
+                        <div data-aos="zoom-out-left" data-aos-duration="500" id="map" class="map">
                             <!--<iframe class="map__fraim" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6065.822044356483!2d-74.34079435134277!3d40.52145772775334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c9ddc9a5d82f%3A0xbed62bfa86ffc065!2sHilton%20Garden%20Inn%20Edison%2FRaritan%20Center!5e0!3m2!1sru!2sru!4v1626531878634!5m2!1sru!2sru" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
                             
                         </div>
@@ -164,11 +165,13 @@
         </section>
         <section class="newsletter">
             <div class="newsletter-container">
-                <div class="newsletter-text">
+                <div data-aos="fade-right"
+      class="newsletter-text">
                     <span class="newsletter__subscribe">subscribe to our</span>
                     <h2 class="newsletter__title">Newsletter</h2>
                 </div>
-            <form action="send.php" method="POST" class="email-form form">
+            <form data-aos="fade-left"
+      action="send.php" method="POST" class="email-form form">
                 <input type="email"  name="email" class="email-form__input" placeholder="Your email address" required>
                 <button class="email-form__button">Send</button>
             </form>   
@@ -178,7 +181,7 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="reviews__title">What people think about us</h2>
-                <div class="reviews-slider">
+                <div data-aos="zoom-in" class="reviews-slider">
                     <!-- Slider main container -->
                     <div class="swiper-container reviews-slider__container">
                       <!-- Additional required wrapper -->
@@ -218,22 +221,22 @@
             <div class="container">
                 <h2 class="activities__title">Other Activities</h2>
                 <div class="activities__wrapper">
-                    <div class="card">
+                    <div data-aos="fade-left" data-aos-delay="100" class="card">
                         <img class="card__img" src="./img/activities-1.jpeg" alt="The curious corner of chamarel">
                         <h3 class="card__title">The curious corner of chamarel</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card">
+                    <div data-aos="fade-left" data-aos-delay="200" class="card">
                         <img class="card__img" src="./img/activities-2.jpeg" alt="Gymkhana club golf course">
                         <h3 class="card__title">Gymkhana club golf course</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card">
+                    <div data-aos="fade-left" data-aos-delay="300" class="card">
                         <img class="card__img" src="./img/activities-3.jpeg" alt="Tamarind falls hiking trip - full day">
                         <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                         <button class="card__button">Book Now</button>
                     </div>
-                    <div class="card">
+                    <div data-aos="fade-left" data-aos-delay="400" class="card">
                         <img class="card__img" src="./img/activities-4.jpeg" alt="The blue marine discovery quest">
                         <h3 class="card__title">The blue marine discovery quest</h3>
                         <button class="card__button">Book Now</button>
@@ -246,8 +249,8 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
-                    <a class="footer__logo footer-logo" href="index.html"><img class="footer-logo__img" src="./img/vertical-logo.svg" alt="image:VerticalLogo"></a>
-                    <div class="footer__categories">
+                    <a data-aos="fade-down-right" data-aos-duration="400" class="footer__logo footer-logo" href="index.html"><img class="footer-logo__img" src="./img/vertical-logo.svg" alt="image:VerticalLogo"></a>
+                    <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="400" class="footer__categories">
                         <h3 class="footer__title">All Categories</h3>
                         <ul class="footer__list">
                             <li class="footer__item"><a class="footer__link" href="#">All Deals</a></li>
@@ -260,7 +263,7 @@
                             <li class="footer__item"><a class="footer__link" href="#">Rodrigues</a></li>
                         </ul>
                     </div>
-                    <div class="footer__additional">
+                    <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="400" class="footer__additional">
                         <h3 class="footer__title">Additional Information</h3>
                         <ul class="footer__list">
                             <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
@@ -271,7 +274,7 @@
                             <li class="footer__item"><a class="footer__link" href="#">Promote your Business on BTP</a></li>
                         </ul>
                     </div>
-                    <div class="footer__social-network social-network">
+                    <div data-aos="fade-left" data-aos-delay="300" data-aos-duration="400" class="footer__social-network social-network">
                         <h3 class="footer__title">Social Network</h3>
                         <ul class="social-network__list">
                             <li class="social-network__item"><a class="social-network__link" href="#"><img class="social-network__icon" src="./img/facebook.svg" alt="icon:facebook"></a></li>
@@ -280,7 +283,7 @@
                             
                         </ul>
                     </div>
-                    <div class="footer__legal-information">
+                    <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="400" class="footer__legal-information">
                       <h3 class="footer__title">Legal Information</h3>  
                         <ul class="footer__list">
                             <li class="footer__item"><a class="footer__link" href="#">Terms & Conditions</a></li>
@@ -289,7 +292,7 @@
                             <li class="footer__item"><a class="footer__link" href="#">Privacy</a></li>
                         </ul>
                     </div>
-                    <div class="footer__contact-details contact-details">
+                    <div data-aos="fade-up" data-aos-duration="400" class="footer__contact-details contact-details">
                         <h3 class="footer__title">Contact Details</h3>
                         <span class="contact-details__description">
                             Feel free to contacts us by phone, email or by our contact form
@@ -306,7 +309,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__message">
+                    <div data-aos="fade-up" data-aos-duration="400" class="footer__message">
                         <h3 class="footer__title">Send us a message</h3>
                             <form class="footer__form form-message form" action="send.php" method="POST">
                                 <div class="form-message__input-group">
@@ -359,6 +362,7 @@
     <script src="./js/bgscroll.js"></script> <!--Инициализация в main.js-->
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
     
     
