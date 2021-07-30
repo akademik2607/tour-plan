@@ -374,7 +374,8 @@ img {
 
 /* line 53, ../sass/_settings.sass */
 .error {
-  color: #EC1F46; }
+  color: #EC1F46;
+  font-size: 12px; }
 
 /* line 2, ../sass/blocks/_header.sass */
 .header-top {
@@ -1265,6 +1266,8 @@ img {
   opacity: 1; }
 /* line 15, ../sass/blocks/_modal.sass */
 .modal__dialog {
+  box-sizing: content-box;
+  height: 522px;
   max-width: 100%;
   position: fixed;
   top: 50%;
@@ -1277,16 +1280,16 @@ img {
   border-radius: 8px;
   visibility: hidden;
   opacity: 0; }
-/* line 28, ../sass/blocks/_modal.sass */
+/* line 30, ../sass/blocks/_modal.sass */
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1; }
-/* line 32, ../sass/blocks/_modal.sass */
+/* line 34, ../sass/blocks/_modal.sass */
 .modal__close {
   position: absolute;
   top: 17px;
   right: 18px; }
-/* line 36, ../sass/blocks/_modal.sass */
+/* line 38, ../sass/blocks/_modal.sass */
 .modal__title {
   font-family: Mulish;
   font-style: normal;
@@ -1295,11 +1298,11 @@ img {
   line-height: 23px;
   text-transform: uppercase;
   text-align: center; }
-/* line 44, ../sass/blocks/_modal.sass */
+/* line 46, ../sass/blocks/_modal.sass */
 .modal-message {
   display: flex;
   flex-direction: column; }
-/* line 47, ../sass/blocks/_modal.sass */
+/* line 49, ../sass/blocks/_modal.sass */
 .modal-message__field {
   padding: 18px 23px;
   font-family: Mulish;
@@ -1310,16 +1313,16 @@ img {
   border-radius: 4px;
   border: none;
   margin-top: 15px; }
-/* line 57, ../sass/blocks/_modal.sass */
+/* line 59, ../sass/blocks/_modal.sass */
 .modal-message__input {
   flex-basis: 100%; }
-/* line 59, ../sass/blocks/_modal.sass */
+/* line 61, ../sass/blocks/_modal.sass */
 .modal-message__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 15px; }
-/* line 64, ../sass/blocks/_modal.sass */
+/* line 66, ../sass/blocks/_modal.sass */
 .modal-message__button {
   font-family: Mulish;
   font-style: normal;
