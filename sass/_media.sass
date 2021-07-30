@@ -361,6 +361,12 @@
    margin-bottom: 36px
  .card
   flex-basis: 100%
+ .modal
+  &-message
+   &__wrapper
+    justify-content: center
+   &__required
+    display: none
   
 
 @media(max-width: 576px)
@@ -383,8 +389,9 @@
  .form
   &-message
    &__input
-    flex-basis: 100%
-    margin-bottom: 15px
+    &-group
+     flex-basis: 100%
+     margin-bottom: 15px
    &__textarea
     margin-top: 0
     margin-bottom: 15px
@@ -402,4 +409,7 @@
   &-details
    &__icon
     margin-right: 12px
-  
+ .modal
+  &-message
+   &__button
+    padding: 18px 60px

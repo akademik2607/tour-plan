@@ -394,6 +394,11 @@ img {
   max-width: 100%;
 }
 
+/* line 13, ../sass/_settings.sass */
+.error {
+  color: #EC1F46;
+}
+
 /* line 2, ../sass/blocks/_header.sass */
 .header-top {
   padding-top: 40px;
@@ -932,11 +937,9 @@ img {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
   margin-top: 10px;
 }
-/* line 41, ../sass/blocks/_newsletter.sass */
+/* line 39, ../sass/blocks/_newsletter.sass */
 .email-form__input {
   width: 100%;
   height: 100%;
@@ -946,8 +949,9 @@ img {
   font-size: 14px;
   line-height: 18px;
   border: none;
+  border-radius: 4px;
 }
-/* line 51, ../sass/blocks/_newsletter.sass */
+/* line 50, ../sass/blocks/_newsletter.sass */
 .email-form__button {
   position: absolute;
   width: 65px;
@@ -961,6 +965,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  border-radius: 0 4px 4px 0;
 }
 
 /* line 1, ../sass/blocks/_reviews.sass */
@@ -1345,15 +1350,19 @@ img {
 }
 /* line 136, ../sass/blocks/_footer.sass */
 .form-message__input {
-  flex-basis: 48%;
+  width: 100%;
 }
 /* line 138, ../sass/blocks/_footer.sass */
+.form-message__input-group {
+  flex-basis: 48%;
+}
+/* line 140, ../sass/blocks/_footer.sass */
 .form-message__textarea {
   flex-basis: 100%;
   margin-top: 15px;
   margin-bottom: 22px;
 }
-/* line 142, ../sass/blocks/_footer.sass */
+/* line 144, ../sass/blocks/_footer.sass */
 .form-message__button {
   font-family: Mulish;
   font-style: normal;
@@ -1367,15 +1376,15 @@ img {
   border: none;
   cursor: pointer;
 }
-/* line 154, ../sass/blocks/_footer.sass */
+/* line 156, ../sass/blocks/_footer.sass */
 .form-message__wrapper {
   display: flex;
   justify-content: space-between;
   flex-basis: 100%;
   align-items: center;
 }
-/* line 159, ../sass/blocks/_footer.sass */
-.form-message__requared {
+/* line 161, ../sass/blocks/_footer.sass */
+.form-message__required {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -1408,6 +1417,7 @@ img {
 }
 /* line 15, ../sass/blocks/_modal.sass */
 .modal__dialog {
+  max-width: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1420,18 +1430,18 @@ img {
   visibility: hidden;
   opacity: 0;
 }
-/* line 27, ../sass/blocks/_modal.sass */
+/* line 28, ../sass/blocks/_modal.sass */
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
 }
-/* line 31, ../sass/blocks/_modal.sass */
+/* line 32, ../sass/blocks/_modal.sass */
 .modal__close {
   position: absolute;
   top: 17px;
   right: 18px;
 }
-/* line 35, ../sass/blocks/_modal.sass */
+/* line 36, ../sass/blocks/_modal.sass */
 .modal__title {
   font-family: Mulish;
   font-style: normal;
@@ -1441,12 +1451,12 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 43, ../sass/blocks/_modal.sass */
+/* line 44, ../sass/blocks/_modal.sass */
 .modal-message {
   display: flex;
   flex-direction: column;
 }
-/* line 46, ../sass/blocks/_modal.sass */
+/* line 47, ../sass/blocks/_modal.sass */
 .modal-message__field {
   padding: 18px 23px;
   font-family: Mulish;
@@ -1456,19 +1466,20 @@ img {
   line-height: 15px;
   border-radius: 4px;
   border: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
-/* line 56, ../sass/blocks/_modal.sass */
+/* line 57, ../sass/blocks/_modal.sass */
 .modal-message__input {
   flex-basis: 100%;
 }
-/* line 58, ../sass/blocks/_modal.sass */
+/* line 59, ../sass/blocks/_modal.sass */
 .modal-message__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
-/* line 62, ../sass/blocks/_modal.sass */
+/* line 64, ../sass/blocks/_modal.sass */
 .modal-message__button {
   font-family: Mulish;
   font-style: normal;
@@ -1481,6 +1492,7 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  max-width: 100%;
 }
 
 @media(max-width: 1200px) {
@@ -2013,60 +2025,74 @@ img {
   .card {
     flex-basis: 100%;
   }
+
+  /* line 366, ../sass/_media.sass */
+  .modal-message__wrapper {
+    justify-content: center;
+  }
+  /* line 368, ../sass/_media.sass */
+  .modal-message__required {
+    display: none;
+  }
 }
 @media(max-width: 576px) {
-  /* line 367, ../sass/_media.sass */
+  /* line 373, ../sass/_media.sass */
   .footer {
     padding-bottom: 20px;
   }
-  /* line 369, ../sass/_media.sass */
+  /* line 375, ../sass/_media.sass */
   .footer-conditions {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(max-content, auto) minmax(max-content, auto);
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  /* line 374, ../sass/_media.sass */
+  /* line 380, ../sass/_media.sass */
   .footer-conditions__list {
     grid-column-start: 1;
     grid-row-start: 1;
   }
-  /* line 378, ../sass/_media.sass */
+  /* line 384, ../sass/_media.sass */
   .footer-conditions__pay-systems {
     grid-column-start: 1;
     grid-row-start: 2;
     justify-self: start;
   }
 
-  /* line 385, ../sass/_media.sass */
-  .form-message__input {
+  /* line 392, ../sass/_media.sass */
+  .form-message__input-group {
     flex-basis: 100%;
     margin-bottom: 15px;
   }
-  /* line 388, ../sass/_media.sass */
+  /* line 395, ../sass/_media.sass */
   .form-message__textarea {
     margin-top: 0;
     margin-bottom: 15px;
   }
-  /* line 391, ../sass/_media.sass */
+  /* line 398, ../sass/_media.sass */
   .form-message__wrapper {
     flex-direction: column;
     align-items: flex-start;
   }
-  /* line 394, ../sass/_media.sass */
+  /* line 401, ../sass/_media.sass */
   .form-message__requared {
     order: -1;
     margin-bottom: 15px;
   }
 }
 @media(max-width: 320px) {
-  /* line 399, ../sass/_media.sass */
+  /* line 406, ../sass/_media.sass */
   .container {
     width: 278px;
   }
 
-  /* line 403, ../sass/_media.sass */
+  /* line 410, ../sass/_media.sass */
   .contact-details__icon {
     margin-right: 12px;
+  }
+
+  /* line 414, ../sass/_media.sass */
+  .modal-message__button {
+    padding: 18px 60px;
   }
 }
