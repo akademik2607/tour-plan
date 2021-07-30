@@ -74,5 +74,27 @@ $(document).ready(function(){
             modalDialog.removeClass('modal__dialog--visible');
         }
     });
+
+    //валидация форм
+    $(".form").each(function(){
+        $(this).validate({
+          messages: {
+            name: {
+                required:"Please specify your name",
+            },
+            phone: {
+                required:"Please specify your phone",
+            },
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+          }
+        }); 
+    });
+    jQuery(function($){
+        $.mask.definitions['~']='[+-]';
+        $("[type=tel]").mask("~9 (999) 999-9999", {placeholder: "+7 (___) ___-____"});
+    });
 });
 
